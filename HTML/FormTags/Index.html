@@ -6,7 +6,9 @@
     <title>Basic Forms</title>
   </head>
   <body>
-    <form>
+    <fieldset>
+        <legend align="center">Basic Form </legend>
+            <form>
       <label for="FullName">Full Name :-</label>
       <input
         type="text"
@@ -72,8 +74,44 @@
       <input type="number" name="number" id="number" />
       <br />
       <br />
+       <label for="resume">Resume: </label>
+      <input type="file" name="resume" id="resume" />
+      <br />
+      <br />
+      <label for="address">Address: </label>
+      <textarea name="address" id="address"></textarea>
+      <br />
+      <br />
+      <label for="course"> Course</label>
+      <select name="course" id="course">
+        <option value="">--Select Course--</option>
+        <option value="btech">B.Tech</option>
+        <option value="mtech">M.Tech</option>
+        <option value="bba">BBA</option>
+        <option value="mba">MBA</option>
+      </select>
+      <br>
+      <br>
+      <label for="gender">Gender :</label>
+      <input type="radio" name="gender" id="male" value="male" /> <span>Male</span>
+      <input type="radio" name="gender" id="female" value="female" /> <span>Female</span>
+            <input type="radio" name="gender" id="others" value="others" /> <span>Others</span>
+            <br>
+      <br>
+      <label for="SkillSet">Skill Set :</label>
+      <input type="checkbox" name="SkillSet" id="Java" value="Java" /> <span>Java</span>
+      <input type="checkbox" name="SkillSet" id="DSA" value="DSA" /> <span>DSA</span>
+            <input type="checkbox" name="SkillSet" id="HTML" value="HTML" /> <span>HTML</span>
+
+
+
+
 
       <button>Submit</button>
-    </form>
+    </form>   
+    </fieldset>
+    
+    <img src="./WhatsApp Image 2026-07-10 at 5.59.40 PM.jpeg" alt="" width="100px"
+    length = "100px" />
   </body>
 </html>
