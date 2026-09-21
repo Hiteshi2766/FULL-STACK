@@ -1,0 +1,21 @@
+*{
+    background: burlywood;
+    
+
+}
+h1{
+    background: blueviolet;
+}
+.HII {
+    background: rebeccapurple;
+    color: blue;
+    
+}
+
+#SubmitButton {
+    background: #000000;
+    color: aliceblue;
+}
+#Help {
+    background-color: cornflowerblue;
+}

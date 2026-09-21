@@ -1,0 +1,38 @@
+.Main{
+    background: orange;
+    color: blue;
+    
+}
+*{
+    background: papayawhip;
+}
+#card{
+    background: #000;
+   
+    width: 500px;
+    height: 300px;
+}
+#card p {
+    color: brown;
+   background-color: powderblue;
+   border: 20px groove palegoldenrod;
+  overflow: auto;
+  height: 230px;
+}
+#clickbutton{
+    
+    background-color: aquamarine;
+    border: #e21616;
+    border: 10px solid palevioletred;
+    border-style: double;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+#clickbutton:hover{
+    background-color: aqua;
+    color: chartreuse;
+
+} 
+#clickbutton:active{
+    background-color: darkolivegreen;
+}
