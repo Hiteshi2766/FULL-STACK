@@ -1,0 +1,84 @@
+ body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            margin: 30px;
+        }
+
+        .main {
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 30px;
+            margin: 5px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        fieldset {
+            margin-bottom: 8px;
+            padding: 10px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        .row {
+            display: flex;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .box {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .box label {
+            width: 170px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        select {
+            height: 20px;
+            width: 100px;
+        }
+
+        input[type="radio"] {
+            margin-left: 3px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            padding: 5px;
+            text-align: center;
+        }
+
+        td {
+            padding: 4px;
+            text-align: center;
+        }
+
+
+        .language td {
+            text-align: left;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 3px 8px;
+        }
