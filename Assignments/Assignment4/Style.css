@@ -1,0 +1,88 @@
+body{
+ display: flex;  
+ background-color: rgb(55, 106, 194); 
+ gap: 30px;
+ justify-content: center;
+ padding: 40%;
+ margin-left: 20px;
+}
+
+#e-mail, 
+#name ,
+#password
+{
+    background-color: aliceblue;
+}
+#button1, 
+#button2
+{
+    background-color: rgb(205, 225, 255);
+    width: 300px;
+    length: 300px;
+    box-shadow: 20px cornsilk;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: 100;
+    cursor: pointer;
+
+}
+
+#button1:hover, 
+#button2:hover{
+    background-color: pink;
+    border-radius: 4px;
+    box-shadow: inset;
+    
+}
+
+
+
+.card1 img,
+.card2 img{
+    width: 30px;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.card1 {
+    background-color: aliceblue;
+    align-items: center;
+    align-content: center;
+    border-radius: 7px;
+}
+
+a{
+    background: white;
+}
+a:hover{
+    background-color: cornflowerblue;
+}
+
+h2{
+    background-color: aliceblue;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.card2{
+    background-color: aliceblue;
+    align-items: center;
+    align-content: center;
+    border-radius: 7px;
+
+}
+
+#ab{
+    align-content: center;
+    padding-left: 5px;
+}
+#cd
+{
+    align-content: center;
+    padding-left: 5px;
+
+}
+
+

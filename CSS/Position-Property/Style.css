@@ -12,6 +12,7 @@
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 99;
 }
 
 #menu-items{
@@ -36,4 +37,35 @@
     border: 1px solid gray;
     border-radius: 5px;
 
+}
+
+#section1{
+    display: flex;
+    gap: 20px;
+}
+
+#ricr-img-div{
+    width: 50px;
+    length: 50px;
+    position: relative;
+}
+
+#ricr-img{
+    width: fit;
+    length: inherit;
+
+}
+
+#read more,
+#learn more{
+    padding: 5px 10px;
+    background: red;
+    border: 1px solid chocolate;
+    border-radius: 5px;
+}
+
+#learn more {
+  position: absolute;
+  bottom: 10px;
+  left: 55%;
 }
