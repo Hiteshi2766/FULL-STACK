@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #e2e2e2;
+  margin: 20px;
+}
+
+.resume {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #dbe2e8;
+  display: flex;
+}
+
+.sidebar {
+  width: 32%;
+  background: rgb(180, 97, 38);
+  color: #fff;
+  padding: 25px 20px;
+}
+
+.Card1{
+
+  font-size: small;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  display: block;
+  margin: 0 auto 15px;
+  object-fit: cover;
+}
+
+.name {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.title {
+  text-align: center;
+  color: #e5b35a;
+  font-size: 11px;
+  font-weight: bold;
+  margin-top: 5px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #4e6275;
+}
+
+.sidebar h3 {
+  font-size: 12px;
+  margin: 20px 0 10px;
+  text-transform: uppercase;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  font-size: 11px;
+  line-height: 1.8;
+  color: #cfd9e0;
+}
+
+.sidebar i {
+  color: #3f9adb;
+  width: 15px;
+}
+
+.ref-item {
+  margin-bottom: 12px;
+  font-size: 10px;
+  color: #cfd9e0;
+}
+
+.ref-name {
+  color: #e5b35a;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.main {
+  width: 68%;
+  padding: 25px;
+  color: #333;
+}
+
+.main h2 {
+  font-size: 16px;
+  color: #36495d;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+.about p {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+td {
+  vertical-align: top;
+  padding-bottom: 12px;
+}
+
+.col-left {
+  width: 35%;
+  font-size: 12px;
+  font-weight: bold;
+  color: #3f9adb;
+}
+
+.date {
+  font-size: 10px;
+  color: #666;
+  font-weight: normal;
+}
+
+.col-right {
+  border-left: 2px solid #b0c0d0;
+  padding-left: 10px;
+  font-size: 10.5px;
+  color: #555;
+}
+
+.col-right strong {
+  color: #3f9adb;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 3px;
+}
