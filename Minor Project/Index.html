@@ -1,49 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furni.</title>
-    <link rel="stylesheet" href="Style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Furni — Modern Interior Design Studio</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="header">
-        <div class="logo">
-            <a href="#">Furni<span>.</span></a>
-        </div>
+	<nav class="navbar">
+		<div class="container nav-container">
+			<a class="logo" href="index.html">Furni<span>.</span></a>
 
-        <ul class="nav-links">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact us</a></li>
-        </ul>
+			<ul class="nav-links">
+				<li><a class="active" href="index.html">Home</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="about.html">About us</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="contact.html">Contact us</a></li>
+			</ul>
 
-        <!-- Icons moved INSIDE .header -->
-        <div class="nav-icons">
-            <a href="#"><img src="./image.png" alt="User"></a>
-            <a href="#"><img src="./cart.png" alt="Cart"></a>
-        </div>
-    </div>
+			<div class="nav-icons">
+				<a href="#"><img src="https://themewagon.github.io/furni/images/user.svg" alt="User account"></a>
+				<a href="cart.html"><img src="https://themewagon.github.io/furni/images/cart.svg" alt="Shopping cart"></a>
+			</div>
+		</div>
+	</nav>
 
-    <div class="head">
-        <div class="head-left">
-            <h1>Modern Interior<br>Design Studio</h1>
-            <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
-            
-            <div class="buttons">
-                <a href="#" class="shop-btn">🛒Shop Now</a>
-                <a href="#" class="explore-btn">Explore</a>
-            </div>
-        </div>
+	<header class="hero">
+		<div class="container hero-container">
+			<div class="hero-text">
+				<h1>Modern Interior <span>Design Studio</span></h1>
+				<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
+				<div class="hero-btns">
+					<a href="shop.html" class="btn btn-yellow">Shop Now</a>
+					<a href="#" class="btn btn-outline">Explore</a>
+				</div>
+			</div>
+			<div class="hero-img">
+				<img src="https://themewagon.github.io/furni/images/couch.png" alt="Green couch">
+			</div>
+		</div>
+	</header>
 
-        <div class="head-right">
-            <img src="https://themewagon.github.io/furni/images/couch.png" alt="Sofa Image">
-        </div>
-    </div>
+	<section class="products">
+		<div class="container product-grid">
+			<div class="product-intro">
+				<h2>Crafted with excellent material.</h2>
+				<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
+				<a href="shop.html" class="btn btn-dark">Explore</a>
+			</div>
+
+			<div class="product-card">
+				<a href="cart.html" class="product-link">
+					<div class="product-thumb">
+						<img src="https://themewagon.github.io/furni/images/product-1.png" alt="Nordic Chair">
+					</div>
+					<h3>Nordic Chair</h3>
+					<span class="price">$50.00</span>
+					<span class="add-cart">
+						<img src="https://themewagon.github.io/furni/images/cross.svg" alt="Add to cart">
+					</span>
+				</a>
+			</div>
+
+			<div class="product-card">
+				<a href="cart.html" class="product-link">
+					<div class="product-thumb">
+						<img src="https://themewagon.github.io/furni/images/product-2.png" alt="Kruzo Aero Chair">
+					</div>
+					<h3>Kruzo Aero Chair</h3>
+					<span class="price">$78.00</span>
+					<span class="add-cart">
+						<img src="https://themewagon.github.io/furni/images/cross.svg" alt="Add to cart">
+					</span>
+				</a>
+			</div>
+
+			<div class="product-card">
+				<a href="cart.html" class="product-link">
+					<div class="product-thumb">
+						<img src="https://themewagon.github.io/furni/images/product-3.png" alt="Ergonomic Chair">
+					</div>
+					<h3>Ergonomic Chair</h3>
+					<span class="price">$43.00</span>
+					<span class="add-cart">
+						<img src="https://themewagon.github.io/furni/images/cross.svg" alt="Add to cart">
+					</span>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="why-choose">
+		<div class="container why-choose-grid">
+			<div class="why-choose-text">
+				<h2>Why Choose Us</h2>
+				<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
+
+				<div class="features-grid">
+					<div class="feature-item">
+						<div class="feature-icon">
+							<img src="https://themewagon.github.io/furni/images/truck.svg" alt="Fast Shipping">
+						</div>
+						<h3>Fast &amp; Free Shipping</h3>
+						<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+					</div>
+
+					<div class="feature-item">
+						<div class="feature-icon">
+							<img src="https://themewagon.github.io/furni/images/bag.svg" alt="Easy to Shop">
+						</div>
+						<h3>Easy to Shop</h3>
+						<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+					</div>
+
+					<div class="feature-item">
+						<div class="feature-icon">
+							<img src="https://themewagon.github.io/furni/images/support.svg" alt="24/7 Support">
+						</div>
+						<h3>24/7 Support</h3>
+						<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+					</div>
+
+					<div class="feature-item">
+						<div class="feature-icon">
+							<img src="https://themewagon.github.io/furni/images/return.svg" alt="Hassle Free Returns">
+						</div>
+						<h3>Hassle Free Returns</h3>
+						<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="why-choose-img">
+				<img src="https://themewagon.github.io/furni/images/why-choose-us-img.jpg" alt="Why Choose Us Interior">
+			</div>
+		</div>
+	</section>
+
+	<section class="we-help">
+		<div class="container we-help-grid">
+			<div class="image-mosaic">
+				<div class="grid-img img-1"><img src="https://themewagon.github.io/furni/images/img-grid-1.jpg" alt="Interior 1"></div>
+				<div class="grid-img img-2"><img src="https://themewagon.github.io/furni/images/img-grid-2.jpg" alt="Interior 2"></div>
+				<div class="grid-img img-3"><img src="https://themewagon.github.io/furni/images/img-grid-3.jpg" alt="Interior 3"></div>
+			</div>
+
+			<div class="we-help-content">
+				<h2>We Help You Make Modern Interior Design</h2>
+				<p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
+
+				<ul class="custom-list">
+					<li>Donec vitae odio quis nisl dapibus malesuada</li>
+					<li>Donec vitae odio quis nisl dapibus malesuada</li>
+					<li>Donec vitae odio quis nisl dapibus malesuada</li>
+					<li>Donec vitae odio quis nisl dapibus malesuada</li>
+				</ul>
+				<a href="#" class="btn btn-dark">Explore</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="popular-products">
+		<div class="container popular-grid">
+			<div class="popular-item">
+				<div class="pop-thumb">
+					<img src="https://themewagon.github.io/furni/images/product-1.png" alt="Nordic Chair">
+				</div>
+				<div class="pop-info">
+					<h3>Nordic Chair</h3>
+					<p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio</p>
+					<a href="#">Read More</a>
+				</div>
+			</div>
+
+			<div class="popular-item">
+				<div class="pop-thumb">
+					<img src="https://themewagon.github.io/furni/images/product-2.png" alt="Kruzo Aero Chair">
+				</div>
+				<div class="pop-info">
+					<h3>Kruzo Aero Chair</h3>
+					<p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio</p>
+					<a href="#">Read More</a>
+				</div>
+			</div>
+
+			<div class="popular-item">
+				<div class="pop-thumb">
+					<img src="https://themewagon.github.io/furni/images/product-3.png" alt="Ergonomic Chair">
+				</div>
+				<div class="pop-info">
+					<h3>Ergonomic Chair</h3>
+					<p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio</p>
+					<a href="#">Read More</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="testimonials">
+		<div class="container text-center">
+			<h2>Testimonials</h2>
+			<div class="testimonial-box">
+				<blockquote>
+					<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
+				</blockquote>
+				<div class="author-info">
+					<div class="author-img">
+						<img src="https://themewagon.github.io/furni/images/person-1.png" alt="Maria Jones">
+					</div>
+					<h3>Maria Jones</h3>
+					<span>CEO, Co-Founder, XYZ Inc.</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="blog-section">
+		<div class="container">
+			<div class="blog-header">
+				<h2>Recent Blog</h2>
+				<a href="blog.html" class="view-all">View All Posts</a>
+			</div>
+
+			<div class="blog-grid">
+				<article class="post-card">
+					<a href="#" class="post-thumb"><img src="https://themewagon.github.io/furni/images/post-1.jpg" alt="First Time Home Owner Ideas"></a>
+					<div class="post-body">
+						<h3><a href="#">First Time Home Owner Ideas</a></h3>
+						<div class="meta">
+							by <a href="#">Kristin Watson</a> on <span>Dec 19, 2021</span>
+						</div>
+					</div>
+				</article>
+
+				<article class="post-card">
+					<a href="#" class="post-thumb"><img src="https://themewagon.github.io/furni/images/post-2.jpg" alt="How To Keep Your Furniture Clean"></a>
+					<div class="post-body">
+						<h3><a href="#">How To Keep Your Furniture Clean</a></h3>
+						<div class="meta">
+							by <a href="#">Robert Fox</a> on <span>Dec 15, 2021</span>
+						</div>
+					</div>
+				</article>
+
+				<article class="post-card">
+					<a href="#" class="post-thumb"><img src="https://themewagon.github.io/furni/images/post-3.jpg" alt="Small Space Furniture Apartment Ideas"></a>
+					<div class="post-body">
+						<h3><a href="#">Small Space Furniture Apartment Ideas</a></h3>
+						<div class="meta">
+							by <a href="#">Kristin Watson</a> on <span>Dec 12, 2021</span>
+						</div>
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container footer-container">
+			
+			<div class="floating-sofa">
+				<img src="https://themewagon.github.io/furni/images/sofa.png" alt="Sofa">
+			</div>
+
+			<div class="newsletter-wrap">
+				<h3>
+					<img src="https://themewagon.github.io/furni/images/envelope-outline.svg" alt="Envelope">
+					Subscribe to Newsletter
+				</h3>
+				<form action="#" class="newsletter-form">
+					<input type="text" placeholder="Enter your name" required>
+					<input type="email" placeholder="Enter your email" required>
+					<button type="submit">
+						<img src="https://themewagon.github.io/furni/images/send.svg" alt="Subscribe">
+					</button>
+				</form>
+			</div>
+
+			<div class="footer-main">
+				<div class="footer-brand">
+					<a href="#" class="logo">Furni<span>.</span></a>
+					<p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
+					<ul class="social-links">
+						<li><a href="#"><img src="https://themewagon.github.io/furni/images/facebook.svg" alt="Facebook"></a></li>
+						<li><a href="#"><img src="https://themewagon.github.io/furni/images/twitter.svg" alt="Twitter"></a></li>
+						<li><a href="#"><img src="https://themewagon.github.io/furni/images/instagram.svg" alt="Instagram"></a></li>
+						<li><a href="#"><img src="https://themewagon.github.io/furni/images/linkedin.svg" alt="LinkedIn"></a></li>
+					</ul>
+				</div>
+
+				<div class="footer-links">
+					<ul>
+						<li><a href="about.html">About us</a></li>
+						<li><a href="services.html">Services</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="contact.html">Contact us</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Support</a></li>
+						<li><a href="#">Knowledge base</a></li>
+						<li><a href="#">Live chat</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Jobs</a></li>
+						<li><a href="#">Our team</a></li>
+						<li><a href="#">Leadership</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Nordic Chair</a></li>
+						<li><a href="#">Kruzo Aero</a></li>
+						<li><a href="#">Ergonomic Chair</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<p>Copyright &copy; 2026. All Rights Reserved. &mdash; Designed by <a href="https://untree.co" target="_blank" rel="noopener">Untree.co</a></p>
+				<div class="legal-links">
+					<a href="#">Terms &amp; Conditions</a>
+					<a href="#">Privacy Policy</a>
+				</div>
+			</div>
+
+		</div>
+	</footer>
 
 </body>
 </html>

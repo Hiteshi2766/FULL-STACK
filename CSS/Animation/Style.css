@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#hw
+{
+    width: 400px;
+    height: 2.5rem;
+    border: 1px solid black;
+    text-wrap-mode:nowrap ;
+    overflow: hidden;
+    transition: width 2s 1s , color 2s , background-color 2s 1s;
+    background-color: crimson;
+
+}
+
+#hw:hover
+{
+    
+    width: 800px;
+    color: brown;
+    background-color: chartreuse;
+    transition: width 2s 1s , color 2s , background-color 2s 1s;
+
+
+}
+
+#welcome
+
+{
+background-color: cornsilk;
+}
+
+#welcome::after
+{
+    content: "💕😁";
+}
+
+#box{
+    border: 1px solid #000;
+    height: 20px;
+    width: 20px;
+}
+
+#box:hover
+{
+    width: 100px;
+    height: 100px;
+    transition: all 2s linear;
+
+}
+
+#box1 , 

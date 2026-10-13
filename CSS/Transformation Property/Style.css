@@ -1,0 +1,36 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+#card1
+{
+    border: 3px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 2px 2px 2px 2px grey;
+    overflow: hidden;
+    font-size: 25px;
+
+}
+#card1:hover{
+    transform: translateX(20px);
+    transition: transform 1s;
+    transform: scale(1.1);
+    background-color: coral;
+    font-size: xx-large;
+
+}

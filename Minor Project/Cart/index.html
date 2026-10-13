@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Furni</title>
+    <!-- Font Awesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <!-- NAVBAR & HERO -->
+    <header class="hero">
+        <nav class="navbar container">
+            <div class="logo">
+                <a href="./index.html">Furni<span>.</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../Index.html">Home</a></li>
+  <li><a href="../Shop/Index.html">Shop</a></li>
+  <li><a href="../About US/Index.html">About us</a></li>
+  <li><a href="../Services/Index.html">Services</a></li>
+  <li><a href="../Blog/Index.html">Blog</a></li>
+  <li><a href="../Contact US/Index.html">Contact us</a></li></ul>
+            <div class="nav-icons">
+                <a href="#"><i class="fa-regular fa-user"></i></a>
+                <a href="./INdex.html" class="active"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </nav>
+
+        <div class="hero-banner-small container">
+            <h1>Cart</h1>
+        </div>
+    </header>
+
+    <!-- CART SECTION -->
+    <section class="cart-section">
+        <div class="container">
+            
+            <!-- Cart Form -->
+            <form action="#" method="POST" class="cart-form">
+                <div class="table-responsive">
+                    <table class="cart-table">
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="product-thumbnail">
+                                    <img src="https://themewagon.github.io/furni/images/product-1.png" alt="Product 1">
+                                </td>
+                                <td class="product-name">
+                                    <h3>Product 1</h3>
+                                </td>
+                                <td class="product-price">$49.00</td>
+                                <td>
+                                    <div class="quantity-container">
+                                        <button type="button" class="qty-btn decrease">&minus;</button>
+                                        <input type="number" name="quantity_1" value="1" min="1" class="qty-input">
+                                        <button type="button" class="qty-btn increase">&plus;</button>
+                                    </div>
+                                </td>
+                                <td class="product-total">$49.00</td>
+                                <td>
+                                    <a href="#" class="remove-btn">&times;</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="product-thumbnail">
+                                    <img src="https://themewagon.github.io/furni/images/product-2.png" alt="Product 2">
+                                </td>
+                                <td class="product-name">
+                                    <h3>Product 2</h3>
+                                </td>
+                                <td class="product-price">$49.00</td>
+                                <td>
+                                    <div class="quantity-container">
+                                        <button type="button" class="qty-btn decrease">&minus;</button>
+                                        <input type="number" name="quantity_2" value="1" min="1" class="qty-input">
+                                        <button type="button" class="qty-btn increase">&plus;</button>
+                                    </div>
+                                </td>
+                                <td class="product-total">$49.00</td>
+                                <td>
+                                    <a href="#" class="remove-btn">&times;</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Cart Actions & Bottom Area -->
+                <div class="cart-bottom-grid">
+                    <div class="cart-left-col">
+                        <div class="action-btns">
+                            <button type="submit" name="update_cart" class="btn btn-dark">Update Cart</button>
+                            <a href="../Shop/Index.html" class="btn btn-outline-dark">Continue Shopping</a>
+                        </div>
+            </form> <!-- Cart form cleanly closed here -->
+
+                        <!-- Coupon Box (Separate Form) -->
+                        <div class="coupon-box">
+                            <h3>Coupon</h3>
+                            <p>Enter your coupon code if you have one.</p>
+                            <form action="#" method="POST" class="coupon-form">
+                                <input type="text" name="coupon_code" placeholder="Coupon Code" class="coupon-input">
+                                <button type="submit" class="btn btn-dark">Apply Coupon</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Cart Totals Box -->
+                    <div class="totals-box">
+                        <h3>CART TOTALS</h3>
+                        <div class="totals-item">
+                            <span>Subtotal</span>
+                            <span class="price-text">$98.00</span>
+                        </div>
+                        <div class="totals-item">
+                            <span>Total</span>
+                            <span class="price-text font-bold">$98.00</span>
+                        </div>
+                        <a href="checkout.html" class="btn btn-dark btn-full">Proceed To Checkout</a>
+                    </div>
+                </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="container">
+
+            <!-- Newsletter -->
+            <div class="newsletter-box">
+                <h3><i class="fa-regular fa-envelope"></i> Subscribe to Newsletter</h3>
+                <form action="#" method="POST" class="newsletter-form">
+                    <input type="text" name="name" placeholder="Enter your name" class="input-field" required>
+                    <input type="email" name="email" placeholder="Enter your email" class="input-field" required>
+                    <button type="submit" class="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+
+            <!-- Main Links -->
+            <div class="footer-links-row">
+                <div class="brand-col">
+                    <a href="#" class="footer-logo">Furni<span>.</span></a>
+                    <p>Donec facilisis quam ut porta vulputate. Etiam massa sed facilisis quam ut porta vulputate. Etiam massa sed vulputate.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="link-col">
+                    <ul>
+                        <li><a href="../About US/Index.html">About us</a></li>
+                        <li><a href="../Services/Index.html">Services</a></li>
+                        <li><a href="../Blog/Index.html">Blog</a></li>
+                        <li><a href="../Contact US/Index.html">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <div class="link-col">
+                    <ul>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Knowledge base</a></li>
+                        <li><a href="#">Live chat</a></li>
+                    </ul>
+                </div>
+
+                <div class="link-col">
+                    <ul>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Our team</a></li>
+                        <li><a href="#">Leadership</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="link-col">
+                    <ul>
+                        <li><a href="#">Nordic Chair</a></li>
+                        <li><a href="#">Kruzo Aero</a></li>
+                        <li><a href="#">Ergonomic Chair</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright-row">
+                <p>Copyright &copy; 2026. All Rights Reserved. &mdash; Designed with HTML/CSS.</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,350 @@
+/* Base CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #eff2f1;
+    color: #2f2f2f;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Common Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-yellow {
+    background-color: #f9bf29;
+    color: #2f2f2f;
+    border: none;
+}
+
+.btn-yellow:hover {
+    background-color: #e5af22;
+}
+
+.btn-outline {
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.btn-outline:hover {
+    border-color: #ffffff;
+}
+
+.btn-dark {
+    background-color: #2f2f2f;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-dark:hover {
+    background-color: #434343;
+}
+
+/* NAVBAR & HERO */
+.hero {
+    background-color: #3b5d50;
+    padding-bottom: 60px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+}
+
+.logo a {
+    font-size: 32px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #a2b4ac;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links li a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links li.active a,
+.nav-links li a:hover {
+    color: #ffffff;
+}
+
+.nav-links li.active a {
+    border-bottom: 4px solid #f9bf29;
+    padding-bottom: 5px;
+}
+
+.nav-icons a {
+    color: #ffffff;
+    margin-left: 15px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.hero-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px 0 80px;
+}
+
+.hero-text {
+    width: 45%;
+}
+
+.hero-text h1 {
+    color: #ffffff;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.hero-img {
+    width: 50%;
+    text-align: right;
+}
+
+.hero-img img {
+    max-width: 100%;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+    padding: 90px 0;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 30%;
+}
+
+.info-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #3b5d50;
+    color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.info-card p {
+    font-size: 14px;
+    color: #6a6a6a;
+}
+
+/* CONTACT FORM */
+.main-contact-form {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #2f2f2f;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+    background-color: #ffffff;
+}
+
+.form-control:focus {
+    border-color: #3b5d50;
+}
+
+/* FOOTER SECTION */
+.footer {
+    background-color: #ffffff;
+    padding: 80px 0 40px 0;
+}
+
+
+.input-field {
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    width: 250px;
+    outline: none;
+}
+
+.send-btn {
+    background-color: #3b5d50;
+    color: #ffffff;
+    border: none;
+    padding: 0 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.footer-links-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.brand-col {
+    width: 30%;
+}
+
+.footer-logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #3b5d50;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.footer-logo span {
+    color: #a2b4ac;
+}
+
+.brand-col p {
+    font-size: 13px;
+    color: #6a6a6a;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-color: #dce5e4;
+    color: #3b5d50;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 50%;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.link-col ul {
+    list-style: none;
+}
+
+.link-col ul li {
+    margin-bottom: 10px;
+}
+
+.link-col ul li a {
+    color: #2f2f2f;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.copyright-row {
+    border-top: 1px solid #eff2f1;
+    padding-top: 25px;
+    font-size: 13px;
+    color: #6a6a6a;
+}
+
+
+    /* --- existing code above (Reset, Buttons, Hero, Navbar, Contact Section, Main-Contact-Form) --- */
+
+/* FOOTER SECTION - Corrected Layout */
+.footer {
+    background-color: #ffffff;
+    padding: 80px 0 40px 0;
+    /* FIX 1: Ensure footer content clears floats */
+    clear: both; 
+    overflow: hidden; 
+    position: relative; /* Useful for absolute positioning later if needed */
+}
+
+/* FIX 2: Correcting the layout structure for Newsletter and Social Icons in Footer */
+.newsletter-form {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 50px; /* Separating newsletter from main links */
+}
+
+/* FIX 3: Cleaning up the old header-left/right styles in footer */
+/* Delete these lines if they exist: 
+   .head-left { margin-bottom: 60px; } 
+   .head-left, .head-right { width: 100%; } 
+*/
+
+/* FIX 4: Correcting the position of the special sofa image */
+.special-sofa-img {
+    position: absolute;
+    top: -120px; /* Adjust this value as per needed vertical placement */
+    right: 50px;  /* Adjust this value as per needed horizontal placement */
+    width: 350px; /* Approximate width similar to the reference image */
+    z-index: 10;
+}
+
+.special-sofa-img img {
+    max-width: 100%;
+}
+
+/* --- Keep the existing link-col, copyright-row, social-icons code below --- */

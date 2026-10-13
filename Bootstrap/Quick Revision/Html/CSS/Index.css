@@ -1,0 +1,38 @@
+/* Google Fonts Imports */
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Chewy&display=swap');
+
+body {
+  font-family: 'Chewy', system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.aclonica-regular {
+  font-family: 'Aclonica', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#hero #bg-img-1 {
+  height: 80vh; 
+  overflow: hidden;
+  width: 100%;
+}
+
+#hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(40%);
+}
+
+#hero outer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 3px ;
+}
+
+#hero inner {
+    
+}
