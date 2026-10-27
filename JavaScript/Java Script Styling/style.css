@@ -1,0 +1,13 @@
+.bulb {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border: 1px soolid brown;
+}
+.b1 {
+    background-color: goldenrod;
+
+}
+.b2 {
+    background-color: crimson;
+}

@@ -1,163 +1,190 @@
-/* Base CSS Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: #eff2f1;
+    font-family: "Inter", sans-serif;
+    background-color: #ffffff;
     color: #2f2f2f;
-    line-height: 1.6;
 }
 
-.container {
-    max-width: 1200px;
+.container, 
+#container {
+    max-width: 1320px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
-/* Common Buttons */
-.btn {
-    display: inline-block;
-    padding: 12px 28px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
+.header {
+    background-color: #3b5d50; 
+    width: 100%;
 }
 
-.btn-yellow {
-    background-color: #f9bf29;
-    color: #2f2f2f;
-    border: none;
-}
-
-.btn-yellow:hover {
-    background-color: #e5af22;
-}
-
-.btn-outline {
-    border: 2px solid rgba(255, 255, 255, 0.4);
-    color: #ffffff;
-    margin-left: 10px;
-}
-
-.btn-outline:hover {
-    border-color: #ffffff;
-}
-
-.btn-dark {
-    background-color: #2f2f2f;
-    color: #ffffff;
-    border: none;
-}
-
-.btn-dark:hover {
-    background-color: #434343;
-}
-
-/* NAVBAR & HERO */
-.hero {
-    background-color: #3b5d50;
-    padding-bottom: 60px;
-}
-
-.navbar {
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 80px;
+    padding: 40px 15px;
 }
 
-.logo a {
+.logo {
     font-size: 32px;
+    font-weight: 600;
     color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
 }
 
 .logo span {
-    color: #a2b4ac;
+    color: #f9bf29;
 }
 
-.nav-links {
-    list-style: none;
+.header-links {
     display: flex;
-    gap: 35px;
-}
-
-.nav-links li a {
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    font-size: 15px;
-}
-
-.nav-links li.active a,
-.nav-links li a:hover {
-    color: #ffffff;
-}
-
-.nav-links li.active a {
-    border-bottom: 4px solid #f9bf29;
-    padding-bottom: 5px;
-}
-
-.nav-icons a {
-    color: #ffffff;
-    margin-left: 15px;
-    font-size: 18px;
-    text-decoration: none;
-}
-
-.hero-banner {
-    display: flex;
-    justify-content: space-between;
+    gap: 30px;
     align-items: center;
-    padding: 20px 80px 0 80px;
+}
+
+.header-links span {
+    color: #ffffff;
+    opacity: 0.7;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.header-links span:hover {
+    opacity: 1;
+}
+
+.header-links .active {
+    opacity: 1;
+    font-weight: 600;
+    position: relative;
+}
+
+.header-links .active::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #f9bf29;
+}
+
+.header-icons {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.icon-item {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.icon-item img {
+    width: 23px;
+    height: 23px;
+}
+
+.hero {
+    background-color: #3b5d50;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 15px;
 }
 
 .hero-text {
     width: 45%;
 }
 
-.hero-text h1 {
+.hero-text .h1 {
+    font-size: 54px;
+    font-weight: 700;
     color: #ffffff;
-    font-size: 48px;
+    line-height: 1.2;
     margin-bottom: 20px;
 }
 
-.hero-text p {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 14px;
+.hero-text .p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    line-height: 1.6;
     margin-bottom: 30px;
 }
 
-.hero-img {
+.hero-btns {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-yellow {
+    background-color: #f9bf29;
+    color: #2f2f2f;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-dark {
+    background-color: #2f2f2f;
+    color: #ffffff;
+    display: inline-block;
+    border: none;
+}
+
+.hero-img-wrap {
     width: 50%;
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.hero-img img {
+.hero-img {
     max-width: 100%;
+    height: auto;
+    margin-right: -50px;
 }
 
-/* CONTACT SECTION */
 .contact-section {
-    padding: 90px 0;
+    padding: 7rem 0;
 }
 
 .info-row {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    gap: 30px;
+    margin-bottom: 60px;
 }
 
 .info-card {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 15px;
     width: 30%;
 }
@@ -166,88 +193,140 @@ body {
     width: 50px;
     height: 50px;
     background-color: #3b5d50;
-    color: #ffffff;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
 }
 
-.info-card p {
-    font-size: 14px;
-    color: #6a6a6a;
+.info-icon img {
+    width: 20px;
+    height: 20px;
 }
 
-/* CONTACT FORM */
+.info-card .p {
+    font-size: 15px;
+    color: #2f2f2f;
+    line-height: 1.5;
+}
+
 .main-contact-form {
     max-width: 900px;
-    margin: 0 auto;
 }
 
 .form-row {
     display: flex;
-    gap: 20px;
-}
-
-.half-width {
-    width: 50%;
+    gap: 30px;
 }
 
 .form-group {
     margin-bottom: 25px;
 }
 
-.form-group label {
-    display: block;
+.half-width {
+    width: 50%;
+}
+
+.form-label {
     font-size: 14px;
+    font-weight: 600;
     color: #2f2f2f;
     margin-bottom: 8px;
 }
 
-.form-control {
+.form-control-placeholder {
     width: 100%;
-    padding: 12px 15px;
-    border: 1px solid #ced4da;
+    padding: 12px 20px;
+    border: 1px solid #dce5e4;
     border-radius: 10px;
-    outline: none;
+    color: #999999;
     font-size: 14px;
     background-color: #ffffff;
 }
 
-.form-control:focus {
-    border-color: #3b5d50;
+.textarea-placeholder {
+    height: 120px;
 }
 
-/* FOOTER SECTION */
 .footer {
+    padding: 80px 0 50px 0;
     background-color: #ffffff;
-    padding: 80px 0 40px 0;
+    border-top: 1px solid #edf2f1;
+    position: relative;
 }
 
+.special-sofa-img {
+    position: absolute;
+    top: -120px;
+    right: 5%;
+    width: 300px;
+}
+
+.special-sofa-img img {
+    width: 100%;
+    height: auto;
+}
+
+.newsletter-block {
+    width: 450px;
+    margin-bottom: 60px;
+}
+
+.newsletter-block .h3 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    color: #3b5d50;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.envelope-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.envelope-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+}
 
 .input-field {
-    padding: 12px 15px;
-    border: 1px solid #ced4da;
+    flex: 1;
+    padding: 12px 20px;
+    border: 1px solid #dce5e4;
     border-radius: 10px;
-    width: 250px;
-    outline: none;
+    color: #2f2f2f;
+    font-size: 14px;
 }
 
 .send-btn {
+    width: 45px;
+    height: 45px;
     background-color: #3b5d50;
-    color: #ffffff;
-    border: none;
-    padding: 0 20px;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.send-btn img {
+    width: 16px;
+    height: 16px;
 }
 
 .footer-links-row {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #dce5e4;
 }
 
 .brand-col {
@@ -255,96 +334,64 @@ body {
 }
 
 .footer-logo {
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: 600;
     color: #3b5d50;
-    text-decoration: none;
+    margin-bottom: 20px;
     display: inline-block;
-    margin-bottom: 15px;
+    text-decoration: none;
 }
 
 .footer-logo span {
-    color: #a2b4ac;
+    color: #f9bf29;
 }
 
-.brand-col p {
-    font-size: 13px;
+.brand-col .p {
+    font-size: 14px;
     color: #6a6a6a;
+    line-height: 1.8;
     margin-bottom: 20px;
 }
 
-.social-icons a {
-    display: inline-block;
-    width: 36px;
-    height: 36px;
-    background-color: #dce5e4;
-    color: #3b5d50;
-    text-align: center;
-    line-height: 36px;
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon-item {
+    width: 35px;
+    height: 35px;
+    background-color: #eff2f1;
     border-radius: 50%;
-    margin-right: 5px;
-    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
-.link-col ul {
-    list-style: none;
+.social-icon-item img {
+    width: 14px;
+    height: 14px;
 }
 
-.link-col ul li {
-    margin-bottom: 10px;
+.link-col {
+    width: 15%;
 }
 
-.link-col ul li a {
-    color: #2f2f2f;
-    text-decoration: none;
+.link-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.link-list span {
     font-size: 14px;
+    color: #2f2f2f;
+    cursor: pointer;
 }
 
 .copyright-row {
-    border-top: 1px solid #eff2f1;
-    padding-top: 25px;
-    font-size: 13px;
+    padding-top: 30px;
+    font-size: 14px;
     color: #6a6a6a;
 }
-
-
-    /* --- existing code above (Reset, Buttons, Hero, Navbar, Contact Section, Main-Contact-Form) --- */
-
-/* FOOTER SECTION - Corrected Layout */
-.footer {
-    background-color: #ffffff;
-    padding: 80px 0 40px 0;
-    /* FIX 1: Ensure footer content clears floats */
-    clear: both; 
-    overflow: hidden; 
-    position: relative; /* Useful for absolute positioning later if needed */
-}
-
-/* FIX 2: Correcting the layout structure for Newsletter and Social Icons in Footer */
-.newsletter-form {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    margin-bottom: 50px; /* Separating newsletter from main links */
-}
-
-/* FIX 3: Cleaning up the old header-left/right styles in footer */
-/* Delete these lines if they exist: 
-   .head-left { margin-bottom: 60px; } 
-   .head-left, .head-right { width: 100%; } 
-*/
-
-/* FIX 4: Correcting the position of the special sofa image */
-.special-sofa-img {
-    position: absolute;
-    top: -120px; /* Adjust this value as per needed vertical placement */
-    right: 50px;  /* Adjust this value as per needed horizontal placement */
-    width: 350px; /* Approximate width similar to the reference image */
-    z-index: 10;
-}
-
-.special-sofa-img img {
-    max-width: 100%;
-}
-
-/* --- Keep the existing link-col, copyright-row, social-icons code below --- */

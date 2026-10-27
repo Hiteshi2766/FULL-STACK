@@ -4,206 +4,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart - Furni</title>
-    <!-- Font Awesome Icons CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
 
-    <!-- NAVBAR & HERO -->
-    <header class="hero">
-        <nav class="navbar container">
-            <div class="logo">
-                <a href="./index.html">Furni<span>.</span></a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="../Index.html">Home</a></li>
-  <li><a href="../Shop/Index.html">Shop</a></li>
-  <li><a href="../About US/Index.html">About us</a></li>
-  <li><a href="../Services/Index.html">Services</a></li>
-  <li><a href="../Blog/Index.html">Blog</a></li>
-  <li><a href="../Contact US/Index.html">Contact us</a></li></ul>
-            <div class="nav-icons">
-                <a href="#"><i class="fa-regular fa-user"></i></a>
-                <a href="./INdex.html" class="active"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
-        </nav>
-
-        <div class="hero-banner-small container">
-            <h1>Cart</h1>
+<header class="header">
+    <div id="container" class="header-container">
+        <div class="logo">Furni<span>.</span></div>
+        <div class="header-links">
+          <div><span><a href="../Index.html"></a>Home</span></div>
+          <div><span><a href="../Shop/Index.html"></a>Shop</span></div>
+          <div><span><a href="../About US/Index.html"></a>About us</span></div>
+          <div><span><a href="../Services/Index.html"></a>Services</span></div>
+          <div><span><a href="../Blog/Index.html"></a>Blog</span></div>
+          <div><span><a href="../Contact US/Index.html"></a>Contact us</span></div>
         </div>
-    </header>
 
-    <!-- CART SECTION -->
-    <section class="cart-section">
-        <div class="container">
-            
-            <!-- Cart Form -->
-            <form action="#" method="POST" class="cart-form">
-                <div class="table-responsive">
-                    <table class="cart-table">
-                        <thead>
-                            <tr>
-                                <th>Image</th>
-                                <th>Product</th>
-                                <th>Price</th>
-                                <th>Quantity</th>
-                                <th>Total</th>
-                                <th>Remove</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="product-thumbnail">
-                                    <img src="https://themewagon.github.io/furni/images/product-1.png" alt="Product 1">
-                                </td>
-                                <td class="product-name">
-                                    <h3>Product 1</h3>
-                                </td>
-                                <td class="product-price">$49.00</td>
-                                <td>
-                                    <div class="quantity-container">
-                                        <button type="button" class="qty-btn decrease">&minus;</button>
-                                        <input type="number" name="quantity_1" value="1" min="1" class="qty-input">
-                                        <button type="button" class="qty-btn increase">&plus;</button>
-                                    </div>
-                                </td>
-                                <td class="product-total">$49.00</td>
-                                <td>
-                                    <a href="#" class="remove-btn">&times;</a>
-                                </td>
-                            </tr>
+        <div class="header-icons">
+          <img
+            src="https://icons.getbootstrap.com/assets/icons/person.svg"
+            alt="User Icon"
+            class="icon-user"
+          />
+          <img
+            src="https://icons.getbootstrap.com/assets/icons/cart.svg"
+            alt="Cart Icon"
+            class="icon-cart"
+          /><a href="./index.html"></a>
+        </div>
+      </div>
+    <div class="hero-title-box container">
+        <div class="h1">Cart</div>
+    </div>
+</header>
 
-                            <tr>
-                                <td class="product-thumbnail">
-                                    <img src="https://themewagon.github.io/furni/images/product-2.png" alt="Product 2">
-                                </td>
-                                <td class="product-name">
-                                    <h3>Product 2</h3>
-                                </td>
-                                <td class="product-price">$49.00</td>
-                                <td>
-                                    <div class="quantity-container">
-                                        <button type="button" class="qty-btn decrease">&minus;</button>
-                                        <input type="number" name="quantity_2" value="1" min="1" class="qty-input">
-                                        <button type="button" class="qty-btn increase">&plus;</button>
-                                    </div>
-                                </td>
-                                <td class="product-total">$49.00</td>
-                                <td>
-                                    <a href="#" class="remove-btn">&times;</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+<!-- CART SECTION -->
+<section class="cart-section">
+    <div class="container">
+        
+        <!-- Cart Table Simulation using Divs -->
+        <div class="cart-box">
+            <div class="cart-table-header">
+                <div class="cart-header-cell">Image</div>
+                <div class="cart-header-cell">Product</div>
+                <div class="cart-header-cell">Price</div>
+                <div class="cart-header-cell">Quantity</div>
+                <div class="cart-header-cell">Total</div>
+                <div class="cart-header-cell">Remove</div>
+            </div>
+
+            <!-- Product Row 1 -->
+            <div class="cart-row">
+                <div class="cart-cell cart-item-img">
+                    <img src="https://preview.themewagon.com/furni/images/product-1.png" alt="Product 1">
                 </div>
-
-                <!-- Cart Actions & Bottom Area -->
-                <div class="cart-bottom-grid">
-                    <div class="cart-left-col">
-                        <div class="action-btns">
-                            <button type="submit" name="update_cart" class="btn btn-dark">Update Cart</button>
-                            <a href="../Shop/Index.html" class="btn btn-outline-dark">Continue Shopping</a>
-                        </div>
-            </form> <!-- Cart form cleanly closed here -->
-
-                        <!-- Coupon Box (Separate Form) -->
-                        <div class="coupon-box">
-                            <h3>Coupon</h3>
-                            <p>Enter your coupon code if you have one.</p>
-                            <form action="#" method="POST" class="coupon-form">
-                                <input type="text" name="coupon_code" placeholder="Coupon Code" class="coupon-input">
-                                <button type="submit" class="btn btn-dark">Apply Coupon</button>
-                            </form>
-                        </div>
-                    </div>
-
-                    <!-- Cart Totals Box -->
-                    <div class="totals-box">
-                        <h3>CART TOTALS</h3>
-                        <div class="totals-item">
-                            <span>Subtotal</span>
-                            <span class="price-text">$98.00</span>
-                        </div>
-                        <div class="totals-item">
-                            <span>Total</span>
-                            <span class="price-text font-bold">$98.00</span>
-                        </div>
-                        <a href="checkout.html" class="btn btn-dark btn-full">Proceed To Checkout</a>
+                <div class="cart-cell product-name">
+                    <div class="h3">Product 1</div>
+                </div>
+                <div class="cart-cell product-price">$49.00</div>
+                <div class="cart-cell">
+                    <div class="quantity-container">
+                        <div class="qty-btn decrease">-</div>
+                        <div class="qty-input-placeholder">1</div>
+                        <div class="qty-btn increase">+</div>
                     </div>
                 </div>
-
-        </div>
-    </section>
-
-    <!-- FOOTER SECTION -->
-    <footer class="footer">
-        <div class="container">
-
-            <!-- Newsletter -->
-            <div class="newsletter-box">
-                <h3><i class="fa-regular fa-envelope"></i> Subscribe to Newsletter</h3>
-                <form action="#" method="POST" class="newsletter-form">
-                    <input type="text" name="name" placeholder="Enter your name" class="input-field" required>
-                    <input type="email" name="email" placeholder="Enter your email" class="input-field" required>
-                    <button type="submit" class="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
-                </form>
+                <div class="cart-cell product-total">$49.00</div>
+                <div class="cart-cell">
+                    <div class="remove-btn">X</div>
+                </div>
             </div>
 
-            <!-- Main Links -->
-            <div class="footer-links-row">
-                <div class="brand-col">
-                    <a href="#" class="footer-logo">Furni<span>.</span></a>
-                    <p>Donec facilisis quam ut porta vulputate. Etiam massa sed facilisis quam ut porta vulputate. Etiam massa sed vulputate.</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <!-- Product Row 2 -->
+            <div class="cart-row">
+                <div class="cart-cell cart-item-img">
+                    <img src="https://preview.themewagon.com/furni/images/product-2.png" alt="Product 2">
+                </div>
+                <div class="cart-cell product-name">
+                    <div class="h3">Product 2</div>
+                </div>
+                <div class="cart-cell product-price">$49.00</div>
+                <div class="cart-cell">
+                    <div class="quantity-container">
+                        <div class="qty-btn decrease">-</div>
+                        <div class="qty-input-placeholder">1</div>
+                        <div class="qty-btn increase">+</div>
                     </div>
                 </div>
-
-                <div class="link-col">
-                    <ul>
-                        <li><a href="../About US/Index.html">About us</a></li>
-                        <li><a href="../Services/Index.html">Services</a></li>
-                        <li><a href="../Blog/Index.html">Blog</a></li>
-                        <li><a href="../Contact US/Index.html">Contact us</a></li>
-                    </ul>
-                </div>
-
-                <div class="link-col">
-                    <ul>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Knowledge base</a></li>
-                        <li><a href="#">Live chat</a></li>
-                    </ul>
-                </div>
-
-                <div class="link-col">
-                    <ul>
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Our team</a></li>
-                        <li><a href="#">Leadership</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-
-                <div class="link-col">
-                    <ul>
-                        <li><a href="#">Nordic Chair</a></li>
-                        <li><a href="#">Kruzo Aero</a></li>
-                        <li><a href="#">Ergonomic Chair</a></li>
-                    </ul>
+                <div class="cart-cell product-total">$49.00</div>
+                <div class="cart-cell">
+                    <div class="remove-btn">X</div>
                 </div>
             </div>
-
-            <div class="copyright-row">
-                <p>Copyright &copy; 2026. All Rights Reserved. &mdash; Designed with HTML/CSS.</p>
-            </div>
-
         </div>
-    </footer>
+
+        <!-- Cart Actions & Bottom Area -->
+        <div class="cart-bottom-grid">
+            <div class="cart-left-col">
+                <div class="action-btns">
+                    <div class="btn btn-dark">Update Cart</div>
+                    <div class="btn btn-outline-dark">Continue Shopping</div>
+                </div>
+
+                <!-- Coupon Box -->
+                <div class="coupon-box">
+                    <div class="h3">Coupon</div>
+                    <div class="p">Enter your coupon code if you have one.</div>
+                    <div class="coupon-form">
+                        <div class="coupon-input-placeholder">Coupon Code</div>
+                        <div class="btn btn-dark">Apply Coupon</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cart Totals Box -->
+            <div class="totals-box">
+                <div class="h3">CART TOTALS</div>
+                <div class="totals-item">
+                    <span>Subtotal</span>
+                    <span class="price-text">$98.00</span>
+                </div>
+                <div class="totals-item">
+                    <span>Total</span>
+                    <span class="price-text font-bold">$98.00</span>
+                </div>
+                <div class="btn btn-dark btn-full">Proceed To Checkout</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER SECTION -->
+<section class="footer">
+    <div class="container">
+
+        <!-- Newsletter -->
+        <div class="newsletter-box">
+            <div class="h3">
+                <div class="envelope-icon">
+                    <img src="https://preview.themewagon.com/furni/images/envelope-outline.svg" alt="Envelope Icon">
+                </div>
+                <span>Subscribe to Newsletter</span>
+            </div>
+            <div class="newsletter-form">
+                <div class="input-field">Enter your name</div>
+                <div class="input-field">Enter your email</div>
+                <div class="send-btn">
+                    <img src="https://icons.getbootstrap.com/assets/icons/send-fill.svg" alt="Send Icon">
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Links -->
+        <div class="footer-links-row">
+            <div class="brand-col">
+                <div class="footer-logo">Furni<span>.</span></div>
+                <div class="p">Donec facilisis quam ut porta vulputate. Etiam massa sed facilisis quam ut porta vulputate. Etiam massa sed vulputate.</div>
+                <div class="social-icons">
+                    <div class="social-icon-item"><img src="https://icons.getbootstrap.com/assets/icons/facebook.svg" alt="Facebook"></div>
+                    <div class="social-icon-item"><img src="https://icons.getbootstrap.com/assets/icons/twitter.svg" alt="Twitter"></div>
+                    <div class="social-icon-item"><img src="https://icons.getbootstrap.com/assets/icons/instagram.svg" alt="Instagram"></div>
+                    <div class="social-icon-item"><img src="https://icons.getbootstrap.com/assets/icons/linkedin.svg" alt="LinkedIn"></div>
+                </div>
+            </div>
+
+            <div class="link-col">
+                <div class="link-list">
+                    <span>About us</span>
+                    <span>Services</span>
+                    <span>Blog</span>
+                    <span>Contact us</span>
+                </div>
+            </div>
+
+            <div class="link-col">
+                <div class="link-list">
+                    <span>Support</span>
+                    <span>Knowledge base</span>
+                    <span>Live chat</span>
+                </div>
+            </div>
+
+            <div class="link-col">
+                <div class="link-list">
+                    <span>Jobs</span>
+                    <span>Our team</span>
+                    <span>Leadership</span>
+                    <span>Privacy Policy</span>
+                </div>
+            </div>
+
+            <div class="link-col">
+                <div class="link-list">
+                    <span>Nordic Chair</span>
+                    <span>Kruzo Aero</span>
+                    <span>Ergonomic Chair</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright-row">
+            <div class="p">Copyright &copy; 2026. All Rights Reserved. &mdash; Designed with HTML/CSS.</div>
+        </div>
+
+    </div>
+</section>
 
 </body>
 </html>

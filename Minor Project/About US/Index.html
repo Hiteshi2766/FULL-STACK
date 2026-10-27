@@ -5,78 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Furni</title>
     <link rel="stylesheet" href="Style.css">
-   </head>
+</head>
 <body>
+<header class="header">
+      <div class="container header-container">
+        <div class="logo">Furni<span>.</span></div>
 
-    <!-- HERO SECTION / NAVBAR -->
-    <header class="hero">
-        <nav class="navbar">
-            <div class="logo">
-                <a href="index.html">Furni<span>.</span></a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="../Index.html">Home</a></li>
-                <li><a href="../Shop/Index.html">Shop</a></li>
-                <li class="active"><a href="./Index.html">About us</a></li>
-                <li><a href="../Services/Index.html">Services</a></li>
-                <li><a href="../Blog/Index.html">Blog</a></li>
-                <li><a href="../Contact US/Index.html">Contact us</a></li>
-            </ul>
-             <div class="nav-icons">
-      <a href="#"><img src="https://themewagon.github.io/furni/images/user.svg" alt="User Icon"></a>
-      <a href="./cart/index.html"><img src="https://themewagon.github.io/furni/images/cart.svg" alt="Cart Icon"></a>
-    </div>
-        </nav>
-
-        <div class="hero-banner">
-            <div class="hero-text">
-                <h1>About Us</h1>
-                <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
-                <div class="hero-btns">
-                    <a href="../Shop/Index.html" class="btn btn-yellow">Shop Now</a>
-                    <a href="#" class="btn btn-outline">Explore</a>
-                </div>
-            </div>
-            <div class="hero-img">
-                <img src="https://themewagon.github.io/furni/images/couch.png" alt="Couch Image">
-            </div>
+        <div class="header-links">
+          <a href="../Index.html">Home</a>
+          <a href="../Shop/Index.html">Shop</a>
+          <a href="./Index.html" class="active">About us</a>
+          <a href="../Services/Index.html">Services</a>
+          <a href="../Blog/Index.html">Blog</a>
+          <a href="../Contact US/Index.html">Contact us</a>
         </div>
+
+        <div class="header-icons">
+          <img
+            src="https://icons.getbootstrap.com/assets/icons/person.svg"
+            alt="User Icon"
+            class="icon-user"
+          />
+          <a href="../Cart/index.html">
+            <img
+              src="https://icons.getbootstrap.com/assets/icons/cart.svg"
+              alt="Cart Icon"
+              class="icon-cart"
+            />
+          </a>
+        </div>
+      </div>
     </header>
+
+    <div class="hero">
+      <div class="container hero-container">
+        <div class="hero-text">
+          <div class="h1">Modern Interior <span>Design Studio</span></div>
+          <div class="p">
+            Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet
+            velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
+          </div>
+          <div class="hero-btns">
+            <div class="btn btn-yellow">Shop Now</div>
+            <div class="btn btn-outline">Explore</div>
+          </div>
+        </div>
+        <img
+          src="https://preview.themewagon.com/furni/images/couch.png"
+          alt="Modern Couch"
+          class="hero-img"
+        />
+      </div>
+    </div>
+
+    <section class="products">
+  <div class="container product-grid">
+    
+    <!-- Intro Column -->
+    <div class="product-intro">
+      <div class="h2">Crafted with excellent material.</div>
+      <div class="p">
+        Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet
+        velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
+      </div>
+      <div class="btn btn-dark">Explore</div>
+    </div>
+
+  </div>
+</section>
 
     <!-- WHY CHOOSE US SECTION -->
     <section class="why-section">
         <div class="container">
             <div class="why-row">
                 <div class="why-text">
-                    <h2>Why Choose Us</h2>
-                    <p class="section-desc">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
+                    <div class="h2">Why Choose Us</div>
+                    <div class="p section-desc">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</div>
 
                     <div class="features-box">
                         <div class="feature-card">
-                            <i class="fa-solid fa-truck-fast icon"></i>
-                            <h3>Fast & Free Shipping</h3>
-                            <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit.</p>
+                            <div class="icon-wrap">
+                                <img src="https://preview.themewagon.com/furni/images/truck.svg" alt="Fast &amp; Free Shipping">
+                            </div>
+                            <div class="h3">Fast &amp; Free Shipping</div>
+                            <div class="p">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit.</div>
                         </div>
+
                         <div class="feature-card">
-                            <i class="fa-solid fa-bag-shopping icon"></i>
-                            <h3>Easy to Shop</h3>
-                            <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit.</p>
+                            <div class="icon-wrap">
+                                <img src="https://preview.themewagon.com/furni/images/bag.svg" alt="Easy to Shop">
+                            </div>
+                            <div class="h3">Easy to Shop</div>
+                            <div class="p">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit.</div>
                         </div>
+
                         <div class="feature-card">
-                            <i class="fa-solid fa-headset icon"></i>
-                            <h3>24/7 Support</h3>
-                            <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit.</p>
+                            <div class="icon-wrap">
+                                <img src="https://preview.themewagon.com/furni/images/support.svg" alt="24/7 Support">
+                            </div>
+                            <div class="h3">24/7 Support</div>
+                            <div class="p">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit.</div>
                         </div>
+
                         <div class="feature-card">
-                            <i class="fa-solid fa-rotate-left icon"></i>
-                            <h3>Hassle Free Returns</h3>
-                            <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit.</p>
+                            <div class="icon-wrap">
+                                <img src="https://preview.themewagon.com/furni/images/return.svg" alt="Hassle Free Returns">
+                            </div>
+                            <div class="h3">Hassle Free Returns</div>
+                            <div class="p">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit.</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="why-image">
-                    <img src="https://themewagon.github.io/furni/images/why-choose-us-img.jpg" alt="Why Choose Us">
+                    <img src="https://preview.themewagon.com/furni/images/why-choose-us-img.jpg" alt="Why Choose Us">
                 </div>
             </div>
         </div>
@@ -86,52 +128,52 @@
     <section class="team-section">
         <div class="container">
             <div class="team-title">
-                <h2>Our Team</h2>
+                <div class="h2">Our Team</div>
             </div>
 
             <div class="team-grid">
                 <!-- Member 1 -->
                 <div class="team-card">
                     <div class="team-img">
-                        <img src="https://themewagon.github.io/furni/images/person_1.jpg" alt="Lawson Arnold">
+                        <img src="https://preview.themewagon.com/furni/images/person_1.jpg" alt="Lawson Arnold">
                     </div>
-                    <h3><a href="#">Lawson Arnold</a></h3>
+                    <div class="h3"><span class="link-text">Lawson Arnold</span></div>
                     <span class="position">CEO, Founder, Atty.</span>
-                    <p>Separated they live in. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                    <a href="#" class="learn-more">Learn More</a>
+                    <div class="p">Separated they live in. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</div>
+                    <div class="learn-more">Learn More</div>
                 </div>
 
                 <!-- Member 2 -->
                 <div class="team-card">
                     <div class="team-img">
-                        <img src="https://themewagon.github.io/furni/images/person_2.jpg" alt="Jeremy Walker">
+                        <img src="https://preview.themewagon.com/furni/images/person_2.jpg" alt="Jeremy Walker">
                     </div>
-                    <h3><a href="#">Jeremy Walker</a></h3>
+                    <div class="h3"><span class="link-text">Jeremy Walker</span></div>
                     <span class="position">CEO, Founder, Atty.</span>
-                    <p>Separated they live in. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                    <a href="#" class="learn-more">Learn More</a>
+                    <div class="p">Separated they live in. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</div>
+                    <div class="learn-more">Learn More</div>
                 </div>
 
                 <!-- Member 3 -->
                 <div class="team-card">
                     <div class="team-img">
-                        <img src="https://themewagon.github.io/furni/images/person_3.jpg" alt="Patrik White">
+                        <img src="https://preview.themewagon.com/furni/images/person_3.jpg" alt="Patrik White">
                     </div>
-                    <h3><a href="#">Patrik White</a></h3>
+                    <div class="h3"><span class="link-text">Patrik White</span></div>
                     <span class="position">CEO, Founder, Atty.</span>
-                    <p>Separated they live in. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                    <a href="#" class="learn-more">Learn More</a>
+                    <div class="p">Separated they live in. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</div>
+                    <div class="learn-more">Learn More</div>
                 </div>
 
                 <!-- Member 4 -->
                 <div class="team-card">
                     <div class="team-img">
-                        <img src="https://themewagon.github.io/furni/images/person_4.jpg" alt="Kathryn Ryan">
+                        <img src="https://preview.themewagon.com/furni/images/person_4.jpg" alt="Kathryn Ryan">
                     </div>
-                    <h3><a href="#">Kathryn Ryan</a></h3>
+                    <div class="h3"><span class="link-text">Kathryn Ryan</span></div>
                     <span class="position">CEO, Founder, Atty.</span>
-                    <p>Separated they live in. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                    <a href="#" class="learn-more">Learn More</a>
+                    <div class="p">Separated they live in. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</div>
+                    <div class="learn-more">Learn More</div>
                 </div>
             </div>
         </div>
@@ -140,86 +182,93 @@
     <!-- TESTIMONIAL SECTION -->
     <section class="testimonial-section">
         <div class="container">
-            <h2>Testimonials</h2>
+            <div class="h2">Testimonials</div>
             <div class="testimonial-card">
-                <p class="quote">“Donec facilisis quam ut porta vulputate. Etiam massa sed facilisis quam ut porta vulputate. Etiam massa sed vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.”</p>
+                <div class="p quote">&ldquo;Donec facilisis quam ut porta vulputate. Etiam massa sed facilisis quam ut porta vulputate. Etiam massa sed vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.&rdquo;</div>
                 <div class="author-img">
-                    <img src="https://themewagon.github.io/furni/images/person-1.png" alt="Maria Jones">
+                    <img src="https://preview.themewagon.com/furni/images/person-1.png" alt="Maria Jones">
                 </div>
-                <h4>Maria Jones</h4>
+                <div class="h4">Maria Jones</div>
                 <span class="author-title">CEO, Co-Founder, XYZ Inc.</span>
             </div>
         </div>
     </section>
 
     <!-- FOOTER SECTION -->
-    <footer class="footer">
+    <section class="footer">
         <div class="container">
 
             <!-- Newsletter -->
             <div class="newsletter-box">
-                <h3><i class="fa-regular fa-envelope"></i> Subscribe to Newsletter</h3>
-                <form class="newsletter-form">
-                    <input type="text" placeholder="Enter your name" class="input-field">
-                    <input type="email" placeholder="Enter your email" class="input-field">
-                    <button type="submit" class="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
-                </form>
+                <div class="h3">
+                    <div class="envelope-icon">
+                        <img src="https://preview.themewagon.com/furni/images/envelope-outline.svg" alt="Envelope Icon">
+                    </div>
+                    <span>Subscribe to Newsletter</span>
+                </div>
+                <div class="newsletter-form">
+                    <div class="input-field placeholder">Enter your name</div>
+                    <div class="input-field placeholder">Enter your email</div>
+                    <div class="send-btn">
+                        <img src="https://icons.getbootstrap.com/assets/icons/send-fill.svg" alt="Send Icon">
+                    </div>
+                </div>
             </div>
 
             <!-- Main Links -->
             <div class="footer-links-row">
                 <div class="brand-col">
-                    <a href="#" class="footer-logo">Furni<span>.</span></a>
-                    <p>Donec facilisis quam ut porta vulputate. Etiam massa sed facilisis quam ut porta vulputate. Etiam massa sed vulputate.</p>
+                    <div class="footer-logo">Furni<span>.</span></div>
+                    <div class="p">Donec facilisis quam ut porta vulputate. Etiam massa sed facilisis quam ut porta vulputate. Etiam massa sed vulputate.</div>
                     <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <div class="social-icon-item"><img src="https://icons.getbootstrap.com/assets/icons/facebook.svg" alt="Facebook"></div>
+                        <div class="social-icon-item"><img src="https://icons.getbootstrap.com/assets/icons/twitter.svg" alt="Twitter"></div>
+                        <div class="social-icon-item"><img src="https://icons.getbootstrap.com/assets/icons/instagram.svg" alt="Instagram"></div>
+                        <div class="social-icon-item"><img src="https://icons.getbootstrap.com/assets/icons/linkedin.svg" alt="LinkedIn"></div>
                     </div>
                 </div>
 
                 <div class="link-col">
-                    <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact us</a></li>
-                    </ul>
+                    <div class="link-list">
+                        <span>About us</span>
+                        <span>Services</span>
+                        <span>Blog</span>
+                        <span>Contact us</span>
+                    </div>
                 </div>
 
                 <div class="link-col">
-                    <ul>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Knowledge base</a></li>
-                        <li><a href="#">Live chat</a></li>
-                    </ul>
+                    <div class="link-list">
+                        <span>Support</span>
+                        <span>Knowledge base</span>
+                        <span>Live chat</span>
+                    </div>
                 </div>
 
                 <div class="link-col">
-                    <ul>
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Our team</a></li>
-                        <li><a href="#">Leadership</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
+                    <div class="link-list">
+                        <span>Jobs</span>
+                        <span>Our team</span>
+                        <span>Leadership</span>
+                        <span>Privacy Policy</span>
+                    </div>
                 </div>
 
                 <div class="link-col">
-                    <ul>
-                        <li><a href="#">Nordic Chair</a></li>
-                        <li><a href="#">Kruzo Aero</a></li>
-                        <li><a href="#">Ergonomic Chair</a></li>
-                    </ul>
+                    <div class="link-list">
+                        <span>Nordic Chair</span>
+                        <span>Kruzo Aero</span>
+                        <span>Ergonomic Chair</span>
+                    </div>
                 </div>
             </div>
 
             <div class="copyright-row">
-                <p>Copyright &copy; 2026. All Rights Reserved. &mdash; Designed with HTML/CSS.</p>
+                <div class="p">Copyright &copy; 2026. All Rights Reserved. &mdash; Designed with HTML/CSS.</div>
             </div>
 
         </div>
-    </footer>
+    </section>
 
 </body>
 </html>

@@ -5,175 +5,186 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Furni</title>
     <link rel="stylesheet" href="Style.css">
-   </head>
+</head>
 <body>
 
-    <!-- HERO SECTION / NAVBAR -->
-    <header class="hero">
-        <nav class="navbar">
-            <div class="logo">
-                <a href="index.html">Furni<span>.</span></a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="../Index.html">Home</a></li>
-                <li><a href="../Shop/Index.html">Shop</a></li>
-                <li><a href="../About US/Index.html">About us</a></li>
-                <li><a href="../Services/Index.html">Services</a></li>
-                <li><a href="../Blog/Index.html">Blog</a></li>
-                <li class="active"><a href="./Index.html">Contact us</a></li>
-            </ul>
-             <div class="nav-icons">
-      <a href="#"><img src="https://themewagon.github.io/furni/images/user.svg" alt="User Icon"></a>
-      <a href="../Cart/index.html"><img src="https://themewagon.github.io/furni/images/cart.svg" alt="Cart Icon"></a>
-    </div>
-        </nav>
+    <!-- HEADER SECTION -->
+    <header class="header">
+        <div id="container" class="header-container">
+            <div class="logo">Furni<span>.</span></div>
 
-        <div class="hero-banner">
-            <div class="hero-text">
-                <h1>Contact Us</h1>
-                <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
-                <div class="hero-btns">
-                    <a href="../Shop/Index.html" class="btn btn-yellow">Shop Now</a>
-                    <a href="#" class="btn btn-outline">Explore</a>
-                </div>
-            </div>
-            <div class="hero-img">
-                <img src="https://themewagon.github.io/furni/images/couch.png" alt="Couch Image">
-            </div>
+            
+          <div class="header-links">
+          <div><span><a href="../Index.html"></a>Home</span></div>
+          <div><span><a href="../Shop/Index.html"></a>Shop</span></div>
+          <div><span><a href="../About US/Index.html"></a>About us</span></div>
+          <div><span><a href="../Services/Index.html"></a>Services</span></div>
+          <div><span><a href="../Blog/Index.html"></a>Blog</span></div>
+          <div><span  class="active"><a href="./Index.html"></a>Contact us</span></div>
         </div>
+
+        <div class="header-icons">
+          <img
+            src="https://icons.getbootstrap.com/assets/icons/person.svg"
+            alt="User Icon"
+            class="icon-user"
+          />
+          <img
+            src="https://icons.getbootstrap.com/assets/icons/cart.svg"
+            alt="Cart Icon"
+            class="icon-cart"
+          /><a href="../Cart/index.html"></a>
+        </div>
+      </div>
     </header>
 
-    <!-- CONTACT FORM & INFO SECTION -->
+    <div class="hero">
+        <div id="container" class="hero-container">
+            <div class="hero-text">
+                <div class="h1">Contact</div>
+                <div class="p">
+                    Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet
+                    velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
+                </div>
+                <div class="hero-btns">
+                    <div class="btn btn-yellow">Shop Now</div>
+                    <div class="btn btn-outline">Explore</div>
+                </div>
+            </div>
+            <div class="hero-img-wrap">
+                <img
+                    src="https://preview.themewagon.com/furni/images/couch.png"
+                    alt="Modern Couch"
+                    class="hero-img"
+                />
+            </div>
+        </div>
+    </div>
+
     <section class="contact-section">
         <div class="container">
             
-            <!-- Contact Info Blocks -->
             <div class="info-row">
                 <div class="info-card">
                     <div class="info-icon">
-                        <i class="fa-solid fa-location-dot"></i>
+                        <img src="https://icons.getbootstrap.com/assets/icons/geo-alt-fill.svg" alt="Location Icon">
                     </div>
-                    <p>43 Raymouth Rd. Baltemoer, London 3910</p>
+                    <div class="p">43 Raymouth Rd. Baltemoer, London 3910</div>
                 </div>
 
                 <div class="info-card">
                     <div class="info-icon">
-                        <i class="fa-solid fa-envelope"></i>
+                        <img src="https://icons.getbootstrap.com/assets/icons/envelope-fill.svg" alt="Envelope Icon">
                     </div>
-                    <p>info@yourdomain.com</p>
+                    <div class="p">info@yourdomain.com</div>
                 </div>
 
                 <div class="info-card">
                     <div class="info-icon">
-                        <i class="fa-solid fa-phone"></i>
+                        <img src="https://icons.getbootstrap.com/assets/icons/telephone-fill.svg" alt="Phone Icon">
                     </div>
-                    <p>+1 294 3925 3939</p>
+                    <div class="p">+1 294 3925 3939</div>
                 </div>
             </div>
 
-            <!-- Contact Form -->
-            <form class="main-contact-form">
+            <div class="main-contact-form">
                 <div class="form-row">
                     <div class="form-group half-width">
-                        <label for="fname">First name</label>
-                        <input type="text" id="fname" class="form-control">
+                        <div class="form-label">First name</div>
+                        <div class="form-control-placeholder">Enter your first name</div>
                     </div>
                     <div class="form-group half-width">
-                        <label for="lname">Last name</label>
-                        <input type="text" id="lname" class="form-control">
+                        <div class="form-label">Last name</div>
+                        <div class="form-control-placeholder">Enter your last name</div>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input type="email" id="email" class="form-control">
+                    <div class="form-label">Email address</div>
+                    <div class="form-control-placeholder">Enter your email</div>
                 </div>
 
                 <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" rows="5" class="form-control"></textarea>
+                    <div class="form-label">Message</div>
+                    <div class="form-control-placeholder textarea-placeholder">Enter your message</div>
                 </div>
 
-                <button type="submit" class="btn btn-dark">Send Message</button>
-            </form>
+                <div class="btn btn-dark">Send Message</div>
+            </div>
 
         </div>
     </section>
 
-   <!-- FOOTER SECTION - Updated Layout -->
-    <footer class="footer">
-        <div class="container">
-
-            <!-- FIX: Removed the incorrect head-right img block and placed a unique block -->
-            <div class="special-sofa-img">
-                <img src="https://themewagon.github.io/furni/images/couch.png" alt="Sofa Image">
-            </div>
-
-            <!-- Newsletter - Updated class name to newsletter-block for clarity -->
+    <section class="footer">
             <div class="newsletter-block">
-                <h3><i class="fa-regular fa-envelope"></i> Subscribe to Newsletter</h3>
-                <form class="newsletter-form">
-                    <input type="text" placeholder="Enter your name" class="input-field">
-                    <input type="email" placeholder="Enter your email" class="input-field">
-                    <button type="submit" class="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
-                </form>
+                <div class="h3">
+                    <div class="envelope-icon">
+                        <img src="https://preview.themewagon.com/furni/images/envelope-outline.svg" alt="Envelope">
+                    </div>
+                    <span>Subscribe to Newsletter</span>
+                </div>
+                <div class="newsletter-form">
+                    <div class="input-field">Enter your name</div>
+                    <div class="input-field">Enter your email</div>
+                    <div class="send-btn">
+                        <img src="https://icons.getbootstrap.com/assets/icons/send-fill.svg" alt="Send">
+                    </div>
+                </div>
             </div>
 
-            <!-- Main Links - Rest of the footer remains same -->
             <div class="footer-links-row">
-                <!-- ... (Keep brand-col, link-col structure same as your original code) ... -->
                 <div class="brand-col">
-                    <a href="#" class="footer-logo">Furni<span>.</span></a>
-                    <p>Donec facilisis quam ut porta vulputate. Etiam massa sed facilisis quam ut porta vulputate. Etiam massa sed vulputate.</p>
+                    <div class="footer-logo">Furni<span>.</span></div>
+                    <div class="p">Donec facilisis quam ut porta vulputate. Etiam massa sed facilisis quam ut porta vulputate. Etiam massa sed vulputate.</div>
                     <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <div class="social-icon-item"><img src="https://icons.getbootstrap.com/assets/icons/facebook.svg" alt="Facebook"></div>
+                        <div class="social-icon-item"><img src="https://icons.getbootstrap.com/assets/icons/twitter.svg" alt="Twitter"></div>
+                        <div class="social-icon-item"><img src="https://icons.getbootstrap.com/assets/icons/instagram.svg" alt="Instagram"></div>
+                        <div class="social-icon-item"><img src="https://icons.getbootstrap.com/assets/icons/linkedin.svg" alt="LinkedIn"></div>
                     </div>
                 </div>
 
                 <div class="link-col">
-                    <ul>
-                        <li><a href="../About US/Index.html">About us</a></li>
-                        <li><a href="../Services/Index.html">Services</a></li>
-                        <li><a href="../Blog/Index.html">Blog</a></li>
-                        <li><a href="../Contact US/Index.html">Contact us</a></li>
-                    </ul>
+                    <div class="link-list">
+                        <span>About us</span>
+                        <span>Services</span>
+                        <span>Blog</span>
+                        <span>Contact us</span>
+                    </div>
                 </div>
 
                 <div class="link-col">
-                    <ul>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Knowledge base</a></li>
-                        <li><a href="#">Live chat</a></li>
-                    </ul>
+                    <div class="link-list">
+                        <span>Support</span>
+                        <span>Knowledge base</span>
+                        <span>Live chat</span>
+                    </div>
                 </div>
 
                 <div class="link-col">
-                    <ul>
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Our team</a></li>
-                        <li><a href="#">Leadership</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
+                    <div class="link-list">
+                        <span>Jobs</span>
+                        <span>Our team</span>
+                        <span>Leadership</span>
+                        <span>Privacy Policy</span>
+                    </div>
                 </div>
 
                 <div class="link-col">
-                    <ul>
-                        <li><a href="#">Nordic Chair</a></li>
-                        <li><a href="#">Kruzo Aero</a></li>
-                        <li><a href="#">Ergonomic Chair</a></li>
-                    </ul>
+                    <div class="link-list">
+                        <span>Nordic Chair</span>
+                        <span>Kruzo Aero</span>
+                        <span>Ergonomic Chair</span>
+                    </div>
                 </div>
             </div>
 
             <div class="copyright-row">
-                <p>Copyright &copy; 2026. All Rights Reserved. &mdash; Designed with HTML/CSS.</p>
+                <div class="p">Copyright &copy; 2026. All Rights Reserved. &mdash; Designed with HTML/CSS.</div>
             </div>
 
         </div>
-    </footer>
+    </section>
 
 </body>
 </html>
